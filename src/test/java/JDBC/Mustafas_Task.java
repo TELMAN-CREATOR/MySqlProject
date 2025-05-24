@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Mustafas_Task extends DBUtility {
     @Test
     public void test04() {
@@ -19,7 +18,6 @@ public class Mustafas_Task extends DBUtility {
             System.out.println(row);
         }
     }
-
     @Test
     public void test09() {
         ArrayList<ArrayList<String>> data = getListData("select d.dept_name, avg(s.salary) as averageSalary from employees.salaries s\n" +
@@ -30,7 +28,6 @@ public class Mustafas_Task extends DBUtility {
             System.out.println(row);
         }
     }
-
     @Test
     public void test14() {
         ArrayList<ArrayList<String>> data = getListData("select e.first_name, e.last_name, max(salary) from employees.employees e\n"
@@ -44,7 +41,6 @@ public class Mustafas_Task extends DBUtility {
 
         }
     }
-
     @Test
     public void test19() {
         ArrayList<ArrayList<String>> data = getListData("select first_name, last_name, hire_date from employees.employees\n" +
